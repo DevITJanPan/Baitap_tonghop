@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài Tập Tổng Hợp</title>
+    <link rel="stylesheet" href="./css/Baitap_tonghop.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="form">
+        <form action="#" class="from-content">
+          <h2>Thông tin học viên</h2>
+          <div class="form-text">
+            <label for="studentId">StudentId</label>
+            <input type="text" name="studentId" id="studentId" /><br />
+          </div>
+          <div class="form-text">
+            <label for="Name">Họ và tên</label>
+            <input type="text" name="Name" id="Name" /><br />
+          </div>
+          <div class="form-text">
+            <label for="email">Email</label>
+          <input type="text" name="email" id="email" /><br />
+          </div>
+          <div class="form-text">
+            <label for="phone">Số điện thoại</label>
+            <input type="tel" name="phone" id="phone" /><br />
+          </div>
+          <div class="form-text">
+            <label for="address">Quê quán</label>
+            <input type="text" name="address" id="address" /><br />
+          </div>
+          <div class="form-text">
+            <label for="sex">Giới tính</label>
+            <input type="radio" name="sex" value="male" id="male" checked /><label
+              for="male"
+              >Male</label
+            >
+            <input type="radio" name="sex" value="female" id="female" /><label
+              for="female"
+              >Female</label
+            ><br />
+          </div>
+          <input type="submit" value="Lưu lại" id="btnButton" />
+        </form>
+      </div>
+      <div class="table">
+        <h2>Danh sách học viên</h2>
+        <label for="searchStudent">Tìm kiếm tên học viên:</label>
+        <input type="text" name="searchStudent" id="searchStudent" />
+        <input type="submit" value="search" />
+        <table border="1">
+          <thead>
+            <tr>
+              <td>#</td>
+              <td>Student Id</td>
+              <td>Student Name</td>
+              <td>Email</td>
+              <td>Số điện thoại</td>
+              <td>Địa chỉ</td>
+              <td>Gender</td>
+              <td>Hành động</td>
+              <td>Sắp xếp(alpha b)</td>
+            </tr>
+          </thead>
+          <tbody id="content"></tbody>
+        </table>
+      </div>
+      <script src="./Baitap_tonghop.js"></script>
+    </div>
+  </body>
+</html>
